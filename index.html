@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorten Link Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h4>Shorten Link Generator</h4>
+        <div class="input-container">
+            <input id="url-input" placeholder="example.com" oninput="enableButton(this.value)"/>
+            <button onclick="generate()" disabled>Generate</button>
+        </div>
+        <div id="loading">loading ...</div>
+        <fieldset id="generated-url-container">
+            <legend>Generated Url</legend>
+            <span id="generated-url"></span>
+        </fieldset>
+   </div>
+    <script src="./main.js"></script>
+</body>
+</html>
